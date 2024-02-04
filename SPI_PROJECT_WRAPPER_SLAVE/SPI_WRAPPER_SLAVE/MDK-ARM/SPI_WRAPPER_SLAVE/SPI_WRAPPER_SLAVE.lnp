@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"spi_wrapper_slave\startup_stm32f303xc.o"
+"spi_wrapper_slave\wrapper.o"
+"spi_wrapper_slave\main.o"
+"spi_wrapper_slave\stm32f3xx_it.o"
+"spi_wrapper_slave\stm32f3xx_hal_msp.o"
+"spi_wrapper_slave\stm32f3xx_hal_tim.o"
+"spi_wrapper_slave\stm32f3xx_hal_tim_ex.o"
+"spi_wrapper_slave\stm32f3xx_hal.o"
+"spi_wrapper_slave\stm32f3xx_hal_rcc.o"
+"spi_wrapper_slave\stm32f3xx_hal_rcc_ex.o"
+"spi_wrapper_slave\stm32f3xx_hal_gpio.o"
+"spi_wrapper_slave\stm32f3xx_hal_dma.o"
+"spi_wrapper_slave\stm32f3xx_hal_cortex.o"
+"spi_wrapper_slave\stm32f3xx_hal_pwr.o"
+"spi_wrapper_slave\stm32f3xx_hal_pwr_ex.o"
+"spi_wrapper_slave\stm32f3xx_hal_flash.o"
+"spi_wrapper_slave\stm32f3xx_hal_flash_ex.o"
+"spi_wrapper_slave\stm32f3xx_hal_i2c.o"
+"spi_wrapper_slave\stm32f3xx_hal_i2c_ex.o"
+"spi_wrapper_slave\stm32f3xx_hal_exti.o"
+"spi_wrapper_slave\stm32f3xx_hal_uart.o"
+"spi_wrapper_slave\stm32f3xx_hal_uart_ex.o"
+"spi_wrapper_slave\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "SPI_WRAPPER_SLAVE\SPI_WRAPPER_SLAVE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI_WRAPPER_SLAVE.map" -o SPI_WRAPPER_SLAVE\SPI_WRAPPER_SLAVE.axf
